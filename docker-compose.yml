@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  blazor-scoped-styles:
+    image: ${DOCKER_REGISTRY-}blazor-scoped-styles
+    build:
+      context: .
+      dockerfile: BlazorScopedStyles/Dockerfile
